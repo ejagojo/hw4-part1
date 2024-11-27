@@ -1,0 +1,69 @@
+<!-- 
+/*
+Name: Eljohn(EJ) Agojo
+Date: 10/28/2024
+File: index.html
+
+GUI Assignment: 
+    This assignment is about creating a web app that dynamically creates a multiplication table based on user input.
+    This assignment served as a way to implement javascript basics and error handling.
+
+Eljohn Agojo, UMass Lowell Computer Science, eljohn_agojo@student.uml.edu
+Copyright (c) 2024 by Eljohn. All rights reserved. May be freely copied or 
+excerpted for educational purposes with credit to the author.
+*/
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div id="main">
+        <header>
+            <h1>Multiplication Table</h1>  
+        </header>
+
+        <!-- Seperator -->
+        <!-- <hr class="solid"> -->
+        <fieldset id="wrapper">
+            <!-- Text between border design -->
+            <legend><h3>Eljohn Agojo</h3></legend>
+
+                <form action="#" id="form-container">
+                    <!-- Input Fields with Floating Labels -->
+                    <div class="form-group">
+                        <input type="text" name="minimum_col_value" id="min_col_value" required placeholder=" ">
+                        <label for="min_col_value">Enter Minimum Column Value</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="max_col_value" id="max_col_value" required placeholder=" ">
+                        <label for="max_col_value">Enter Maximum Column Value</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="min_row_value" id="min_row_value" required placeholder=" ">
+                        <label for="min_row_value">Enter Minimum Row Value</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="max_row_value" id="max_row_value" required placeholder=" ">
+                        <label for="max_row_value">Enter Maximum Row Value</label>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            <div id="table-container"></div>
+        </fieldset>
+    </div>
+    <!-- Load jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Load the jQuery Validation plugin after jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
